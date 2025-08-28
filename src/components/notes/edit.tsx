@@ -115,7 +115,7 @@ const NoteEditCompo = ({noteId}: {noteId: string}) => {
     return (
         <>
             {data ? (
-                <div>
+                <div className="relative">
                     <div className="w-full flex justify-between items-center">
                         <h1 className="text-subTitle text-custom_slate-900">노트 수정</h1>
                         <div className="flex gap-2">
@@ -173,7 +173,7 @@ const NoteEditCompo = ({noteId}: {noteId: string}) => {
                     </div>
                 </div>
             ) : (
-                <div className="absolute top-1/2 -translate-y-1/2">
+                <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
                     <LoadingSpinner />
                 </div>
             )}
